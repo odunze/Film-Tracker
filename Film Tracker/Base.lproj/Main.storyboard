@@ -21,8 +21,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="mka-Tk-Mwd" kind="relationship" relationship="viewControllers" id="gry-5b-6cM"/>
                         <segue destination="Rvc-3r-oz7" kind="relationship" relationship="viewControllers" id="2Pk-zU-TJM"/>
+                        <segue destination="mka-Tk-Mwd" kind="relationship" relationship="viewControllers" id="gry-5b-6cM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awh-I0-yl7" userLabel="First Responder" sceneMemberID="firstResponder"/>

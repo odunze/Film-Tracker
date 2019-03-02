@@ -33,4 +33,11 @@ class FilmListViewController: UITableViewController {
         return cell
         
     }
+    
+    //Allows Swipe to Delete
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
