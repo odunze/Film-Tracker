@@ -32,7 +32,7 @@
         <!--Item-->
         <scene sceneID="jD2-2V-CH8">
             <objects>
-                <tableViewController id="Rvc-3r-oz7" sceneMemberID="viewController">
+                <tableViewController id="Rvc-3r-oz7" customClass="FilmListViewController" customModule="Film_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zpo-uN-AND">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="B20-PF-4ro">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filmCell" id="B20-PF-4ro">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B20-PF-4ro" id="EZP-V1-kIZ">
@@ -68,7 +68,7 @@
         <!--Item-->
         <scene sceneID="ZlR-sC-Hym">
             <objects>
-                <viewController id="mka-Tk-Mwd" sceneMemberID="viewController">
+                <viewController id="mka-Tk-Mwd" customClass="AddViewController" customModule="Film_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ngz-zf-jFd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Save Film"/>
+                                <connections>
+                                    <action selector="saveFilmClicked:" destination="mka-Tk-Mwd" eventType="touchUpInside" id="As0-9e-vtQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,6 +105,10 @@
                         <viewLayoutGuide key="safeArea" id="hf9-5D-l4a"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="nVk-dA-3tG"/>
+                    <connections>
+                        <outlet property="entryField" destination="i11-Pq-4U5" id="obS-E5-dtE"/>
+                        <outlet property="saveButton" destination="dkz-0q-w8s" id="vVL-gW-Kxa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HA9-Xu-3f1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4CAB68AB222B272000DBA66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB68AA222B272000DBA66F /* AppDelegate.swift */; };
-		4CAB68AD222B272000DBA66F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB68AC222B272000DBA66F /* ViewController.swift */; };
+		4CAB68AD222B272000DBA66F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB68AC222B272000DBA66F /* AddViewController.swift */; };
 		4CAB68B0222B272000DBA66F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB68AE222B272000DBA66F /* Main.storyboard */; };
 		4CAB68B2222B272100DBA66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB68B1222B272100DBA66F /* Assets.xcassets */; };
 		4CAB68B5222B272100DBA66F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB68B3222B272100DBA66F /* LaunchScreen.storyboard */; };
+		4CAC225E222B3D4900B49801 /* FilmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC225D222B3D4900B49801 /* FilmListViewController.swift */; };
+		4CAC2260222B3D9A00B49801 /* FilmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC225F222B3D9A00B49801 /* FilmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CAB68A7222B272000DBA66F /* Film Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Film Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAB68AA222B272000DBA66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CAB68AC222B272000DBA66F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CAB68AC222B272000DBA66F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		4CAB68AF222B272000DBA66F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CAB68B1222B272100DBA66F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CAB68B4222B272100DBA66F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CAB68B6222B272100DBA66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAC225D222B3D4900B49801 /* FilmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewController.swift; sourceTree = "<group>"; };
+		4CAC225F222B3D9A00B49801 /* FilmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				4CAB68AA222B272000DBA66F /* AppDelegate.swift */,
-				4CAB68AC222B272000DBA66F /* ViewController.swift */,
+				4CAB68AC222B272000DBA66F /* AddViewController.swift */,
+				4CAC225D222B3D4900B49801 /* FilmListViewController.swift */,
 				4CAB68AE222B272000DBA66F /* Main.storyboard */,
+				4CAC225F222B3D9A00B49801 /* FilmManager.swift */,
 				4CAB68B1222B272100DBA66F /* Assets.xcassets */,
 				4CAB68B3222B272100DBA66F /* LaunchScreen.storyboard */,
 				4CAB68B6222B272100DBA66F /* Info.plist */,
@@ -134,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CAB68AD222B272000DBA66F /* ViewController.swift in Sources */,
+				4CAB68AD222B272000DBA66F /* AddViewController.swift in Sources */,
 				4CAB68AB222B272000DBA66F /* AppDelegate.swift in Sources */,
+				4CAC225E222B3D4900B49801 /* FilmListViewController.swift in Sources */,
+				4CAC2260222B3D9A00B49801 /* FilmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
